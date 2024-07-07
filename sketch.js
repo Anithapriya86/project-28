@@ -20,7 +20,7 @@ function setup() {
 	world = engine.world;
 
 	stoneObj=new stone(235,420,30); 
-
+        console.log(stoneObj);
 	mango1=new mango(1100,100,30);
   mango2=new mango(1170,130,30);
 	mango3=new mango(1010,140,30);
@@ -121,8 +121,8 @@ function keyPressed() {
   stoneBodyPosition=lstone.body.position
   
   var distance=dist(stoneBodyPosition.x, stoneBodyPosition.y, mangoBodyPosition.x, mangoBodyPosition.y)
-  //console.log(distance)
- // console.log(lmango.r+lstone.r)
+  console.log(distance)
+  console.log(lmango.r+lstone.r)
   	if(distance<=lmango.r+lstone.r)
     {
       //console.log(distance);
